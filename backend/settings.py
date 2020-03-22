@@ -19,7 +19,7 @@ SECRET_KEY = 'z2^mu74za+7-j(90&js@5*5jt9x^3vy_5gm_(i%s@m)as%=j$!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-clubhouse.herokuapp.com']
+ALLOWED_HOSTS = ['the-clubhouse.herokuapp.com', 'clubhouse.pizza']
 
 
 # Application definition
