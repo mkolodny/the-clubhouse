@@ -133,3 +133,6 @@ dmypy.json
 
 # Frontend
 !frontend/build
+
+# Mac
+.DS_Store
