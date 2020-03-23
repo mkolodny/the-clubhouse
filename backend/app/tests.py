@@ -1,12 +1,24 @@
 from django.conf import settings
-from django.test import Client, TestCase
+
+from rest_framework.test import APITestCase
 
 
-class CocoCabanaTests(TestCase):
+class FrontendTests(APITestCase):
+    
+    def test_get(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+
+        # It should return the frontend's index.html.
+        with open(settings.FRONTEND_INDEX) as f:
+            html = f.read()
+            self.assertEqual(response.content, html.encode())
+
+
+class CocoCabanaTests(APITestCase):
 
     def test_redirect(self):
-        client = Client()
-        response = client.get('/the-coco-cabana') 
+        response = self.client.get('/the-coco-cabana') 
         self.assertRedirects(
             response,
             settings.COCO_CABANA_HANGOUT_URL,
