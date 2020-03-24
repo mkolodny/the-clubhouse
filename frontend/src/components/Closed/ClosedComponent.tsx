@@ -11,7 +11,7 @@ function Closed() {
           <ClubhouseName>The Coco Cabana</ClubhouseName>
           <HoursHeader>Open Hours:</HoursHeader>
           <ClubhouseHours>6:30pm - 7:30pm Pacific Time, every day</ClubhouseHours>
-          <ClubhouseDescription>The Coco Cabana is an online clubhouse for you and your friends to hangout in while sheltering from the Coronavirus<br />♪┏(・o・)┛♪┗ ( ・o・) ┓♪</ClubhouseDescription>
+          <ClubhouseDescription>The Coco Cabana is an online clubhouse for you and your friends to hangout in while sheltering from the Coronavirus<br />♪┏(・o・)┛♪<DancersBreak />┗ ( ・o・) ┓♪</ClubhouseDescription>
         </ClubhouseContainer>
       </Padding>
     </FullScreenContainer>
@@ -27,6 +27,14 @@ const ClubhouseContainer = styled.div`
   padding-right: 70px;
   padding-top: 55px;
   text-align: center;
+
+  @media (max-width: 826px) {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
 `;
 
 const ClubhouseDescription = styled.div`
@@ -38,12 +46,22 @@ const ClubhouseDescription = styled.div`
   max-width: 800px;
   line-height: 42px;
   text-align: center;
+
+  @media (max-width: 826px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 `;
 
 const ClubhouseHours = styled.p`
   font-size: 40px;
   margin-bottom: 0;
   margin-top: 20px;
+
+  @media (max-width: 826px) {
+    font-size: 32px;
+    line-height: 35px;
+  }
 `;
 
 const ClubhouseName = styled.h1`
@@ -51,12 +69,19 @@ const ClubhouseName = styled.h1`
   line-height: 90px;
   margin-bottom: 0;
   margin-top: 0;
+
+  @media (max-width: 826px) {
+    font-size: 50px;
+    line-height: 50px;
+  }
 `;
 
-const HoursHeader = styled.h2`
-  font-size: 40px;
-  margin-bottom: 0;
-  margin-top: 70px;
+const DancersBreak = styled.br`
+  display: none;
+
+  @media (max-width: 826px) {
+    display: block;
+  }
 `;
 
 const FullScreenContainer = styled.div`
@@ -66,14 +91,35 @@ const FullScreenContainer = styled.div`
   width: 100vw;
 `;
 
+const HoursHeader = styled.h2`
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 70px;
+
+  @media (max-width: 826px) {
+    font-size: 32px;
+    line-height: 35px;
+  }
+`;
+
 const Logo = styled.div`
   font-family: Monoton, cursive;
   font-size: 70px;
   line-height: 70px;
+
+  @media (max-width: 826px) {
+    line-height: 42px;
+    font-size: 42px;
+    padding-top: 20px;
+  }
 `;
 
 const Padding = styled.div`
   padding: 90px;
+
+  @media (max-width: 826px) {
+    padding: 15px;
+  }
 `;
 
 export default Closed;
