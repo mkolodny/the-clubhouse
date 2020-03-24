@@ -140,6 +140,8 @@ STATICFILES_DIRS = [
     path.join(FRONTEND_DIR, 'build', 'static'),
 ]
 
+FRONTEND_INDEX = path.join(BASE_DIR, 'frontend', 'build', 'index.html')
+
 
 # Hackathon clubhouse URL
 
