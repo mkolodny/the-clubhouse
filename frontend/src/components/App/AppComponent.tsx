@@ -42,8 +42,8 @@ const Logo = styled.div`
   padding-top: 90px;
 
   @media (max-width: 826px) {
-    font-size: 90vw;
-    line-height: 90vw;
+    font-size: 43px;
+    line-height: 45px;
     padding-left: 0;
     padding-top: 0;
   }
