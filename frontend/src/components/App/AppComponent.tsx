@@ -22,6 +22,7 @@ function App() {
 }
 
 const FullScreenContainer = styled.div`
+  background-color: rgb(3, 3, 3);
   background-image: url("https://the-clubhouse.s3.amazonaws.com/the-clubhouse.jpg");
   height: 100vh;
   width: 100vw;

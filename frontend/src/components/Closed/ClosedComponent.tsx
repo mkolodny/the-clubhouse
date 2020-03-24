@@ -85,6 +85,7 @@ const DancersBreak = styled.br`
 `;
 
 const FullScreenContainer = styled.div`
+  background-color: rgb(3, 3, 3);
   background-image: url("https://the-clubhouse.s3.amazonaws.com/the-clubhouse.jpg");
   color: #f9f9f9;
   min-height: 100vh;
