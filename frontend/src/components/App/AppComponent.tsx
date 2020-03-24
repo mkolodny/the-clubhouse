@@ -1,12 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 
+import Closed from '../Closed';
 
 function App() {
   return (
-    <FullScreenContainer>
-      <Logo>The<br />Clubhouse</Logo>
-    </FullScreenContainer>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/the-coco-cabana">
+          <Closed />
+        </Route>
+        <Route path="*">
+          <FullScreenContainer>
+            <Logo>The<br />Clubhouse</Logo>
+          </FullScreenContainer>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -25,7 +25,7 @@ const ClubhouseContainer = styled.div`
   padding-bottom: 70px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 40px;
+  padding-top: 55px;
   text-align: center;
 `;
 
