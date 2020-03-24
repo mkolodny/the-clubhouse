@@ -11,7 +11,7 @@ function Closed() {
           <ClubhouseName>The Coco Cabana</ClubhouseName>
           <HoursHeader>Open Hours:</HoursHeader>
           <ClubhouseHours>6:30pm - 7:30pm Pacific Time, every day</ClubhouseHours>
-          <ClubhouseDescription>The Coco Cabana is an online clubhouse for you and your friends to hangout in while sheltering from the Coronavirus<br />♪┏(・o・)┛♪<DancersBreak />┗ ( ・o・) ┓♪</ClubhouseDescription>
+          <ClubhouseDescription>The Coco Cabana is a video chat clubhouse for you and your friends to hangout in while you shelter from the Coronavirus<br />♪┏(・o・)┛♪<DancersBreak />┗ ( ・o・) ┓♪</ClubhouseDescription>
         </ClubhouseContainer>
       </Padding>
     </FullScreenContainer>
@@ -30,10 +30,10 @@ const ClubhouseContainer = styled.div`
 
   @media (max-width: 826px) {
     margin-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 `;
 
@@ -50,6 +50,7 @@ const ClubhouseDescription = styled.div`
   @media (max-width: 826px) {
     font-size: 25px;
     line-height: 30px;
+    margin-top: 60px;
   }
 `;
 
