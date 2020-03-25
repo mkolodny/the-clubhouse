@@ -2,4 +2,4 @@
 
 ♪┏(・o・)┛♪┗ ( ・o・) ┓♪
 
-A digital clubhouse for you and your friends to hangout in together during the Coronavirus "shelter in place" :)
+A video chat clubhouse for you and your friends to hangout in while you shelter from the Coronavirus :)
