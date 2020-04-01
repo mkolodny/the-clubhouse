@@ -25,7 +25,7 @@ class CocoCabanaTests(APITestCase):
     def test_open(self, mock_timezone):
         # Mock 6:30pm PT.
         pt = pytz.timezone('US/Pacific')
-        six_thirty = datetime.now(tz=pt).replace(hour=17, minute=30)
+        six_thirty = datetime.now(tz=pt).replace(hour=18, minute=30)
         mock_timezone.localtime.return_value = six_thirty
         
         response = self.client.get('/the-coco-cabana') 
@@ -40,9 +40,10 @@ class CocoCabanaTests(APITestCase):
 
     @mock.patch('backend.app.views.timezone')
     def test_before_open(self, mock_timezone):
-        # Mock 6:29pm PT.
+        # Mock 6:24pm PT (clubhouses open 5 minutes early
+        # just in case someone arrives a little early).
         pt = pytz.timezone('US/Pacific')
-        six_twenty_nine = datetime.now(tz=pt).replace(hour=18, minute=29)
+        six_twenty_nine = datetime.now(tz=pt).replace(hour=18, minute=24)
         mock_timezone.localtime.return_value = six_twenty_nine
         
         response = self.client.get('/the-coco-cabana') 

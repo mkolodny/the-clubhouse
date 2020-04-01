@@ -21,7 +21,7 @@ class ClubhouseView(View):
         now = timezone.localtime(timezone=pt)
         six_thirty = timezone.localtime(timezone=pt).replace(
             hour=18,
-            minute=30,
+            minute=25,
         )
         seven_thirty = timezone.localtime(timezone=pt).replace(
             hour=19,
